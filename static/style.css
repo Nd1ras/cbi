@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #f8f4e3; /* ivory */
+}
+
+/* Background Carousel */
+
+.carousel {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Overlay Content */
+
+.content {
+    background: rgba(90, 45, 20, 0.75); /* rich brown overlay */
+    width: 350px;
+    padding: 30px;
+    margin: 120px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Form */
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5a2d14; /* rich brown */
+    color: #f8f4e3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7a3b1c;
+}

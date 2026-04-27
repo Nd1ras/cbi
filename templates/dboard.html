@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Appointments Dashboard</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}"
+        />
+    </head>
+
+    <body>
+        <h1>Booked Appointments</h1>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Service</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+
+            {% for appointment in appointments %}
+
+            <tr>
+                <td>{{ appointment.name }}</td>
+                <td>{{ appointment.phone }}</td>
+                <td>{{ appointment.service }}</td>
+                <td>{{ appointment.date }}</td>
+                <td>{{ appointment.time }}</td>
+            </tr>
+
+            {% endfor %}
+        </table>
+    </body>
+</html>

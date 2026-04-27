@@ -10,32 +10,33 @@
 
     <body>
         <div class="carousel"></div>
+        <header class="top-bar">
+            <h1 class="brand-title">Clawed by Inviolata</h1>
+        </header>
 
         <div class="content">
-            <h1>Clawed by Inviolata</h1>
-
             <form action="/book" method="POST">
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                />
-
-                <select name="service" required>
-                    <option value="">Choose Service</option>
-                    <option>Builder</option>
-                    <option>Gum Gel</option>
-                    <option>Gel X</option>
-                    <option>Gel</option>
-                    <option>Tips</option>
-                    <option>Pedicure</option>
-                </select>
-
-                <input type="date" name="date" required />
-                <input type="time" name="time" required />
-
-                <button type="submit">Book Appointment</button>
+            
+            <input type="text" name="name" placeholder="Your Name" required>
+            
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            
+            <select name="service" required>
+            <option value="">Choose Service</option>
+            <option>Builder</option>
+            <option>Gum Gel</option>
+            <option>Gel X</option>
+            <option>Gel</option>
+            <option>Tips</option>
+            <option>Pedicure</option>
+            </select>
+            
+            <input type="date" name="date" required>
+            
+            <input type="time" name="time" required>
+            
+            <button type="submit">Book Appointment</button>
+            
             </form>
         </div>
 
